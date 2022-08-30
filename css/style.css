@@ -1,0 +1,35 @@
+/* Style CSS */
+*{
+    font-family: 'Roboto';
+}
+
+
+#headerHero {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#homeNavbar {
+    color: black;
+}
+#heroimgbar {
+    display: flex;
+    justify-content: space-between;    
+}
+
+#herosectionimg {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; 
+    grid-template-rows: 33% 33% 33%;
+    background-image: url("../images/hero-image.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#card1 {
+    grid-column-start: 1;
+}
+#card2 {
+    grid-row-start: 3;
+}
