@@ -3,6 +3,9 @@
     font-family: 'Roboto';
 }
 
+body{
+    margin: 40px;
+}
 
 #headerHero {
     display: flex;
@@ -17,11 +20,15 @@
     display: flex;
     justify-content: space-between;    
 }
+#heroSection {
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
 #herosectionimg {
-    display: grid;
-    grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: 33% 33% 33%;
+
+    width: 50vw;
     background-image: url("../images/hero-image.png");
     background-repeat: no-repeat;
     background-size: 100%;
