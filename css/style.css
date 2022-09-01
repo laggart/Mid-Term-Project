@@ -1,42 +1,105 @@
 /* Style CSS */
-*{
+body {
     font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    margin: 40px;
+#headerButton {
+    display: none;
+    margin: 25px 20px;
+    padding: 10px 10px;
+    background-color: #072AC8;
+    color: #FFFFFF;
+    text-align: center;
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 #headerHero {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    padding-bottom: 100px;
 }
 
-#homeNavbar {
-    color: black;
+#circleHome {
+    margin: 20px 20px;
+padding: 15px 10px;
 }
+    
+#homeNavbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navlist {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    
+}
+
+#navlist li a {
+    margin-left: 1rem;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 17px;
+    color: #072ac8;
+}
+
+#heroSection {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 50% 50%; */
+}
+
+
 #heroimgbar {
     display: flex;
     justify-content: space-between;    
 }
-#heroSection {
-    width: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+
 
 #herosectionimg {
-
-    width: 50vw;
+    position: relative;
+    width: 70vw;
     background-image: url("../images/hero-image.png");
+    /* background-position: center; */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
+    height: 500px;
 }
 
 #card1 {
-    grid-column-start: 1;
+    position: absolute;
+    top: -20px;
+    left: -70px;
+    width: 300px;
+
 }
+
 #card2 {
-    grid-row-start: 3;
+    position: absolute;
+    width: 250px;
+    left: 250px;
+    bottom: -80px;
 }
+
+@media (min-width: 1024px) {
+   
+    #headerButton {
+        display: inline-flex;
+    }
+
+    #heroSection {
+        flex-direction: row;
+    }
+    /* .allSections {
+      display: block;
+    } */
+  }
+  
