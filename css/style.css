@@ -1,105 +1,231 @@
 /* Style CSS */
 body {
-    font-family: 'Roboto';
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f4fc;
+}
+p {
+  color: #6b708d;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 70.31px;
+  color: #292e47;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 47px;
+  color: #292e47;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 28.13px;
+  color: #292e47;
+}
+
+.allbuttons {
+  border: none;
+  margin: 25px 20px;
+  padding: 10px 10px;
+  background-color: #072ac8;
+  color: #ffffff;
+  text-align: center;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 #headerButton {
-    display: none;
-    margin: 25px 20px;
-    padding: 10px 10px;
-    background-color: #072AC8;
-    color: #FFFFFF;
-    text-align: center;
-    font-style: normal;
-    font-size: 17px;
-    font-weight: 500;
+  display: none;
+}
+
+#headerButton:active {
+  background-color: #6b708d;
 }
 
 #headerHero {
-    margin-top: 40px;
-    padding-bottom: 100px;
+  margin-top: 40px;
 }
 
 #circleHome {
-    margin: 20px 20px;
-padding: 15px 10px;
+  margin: 20px 20px;
+  padding: 15px 10px;
 }
-    
+
 #homeNavbar {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #navlist {
-    display: flex;
-    list-style: none;
-    padding: 20px;
-    
+  display: flex;
+  list-style: none;
+  padding: 20px;
 }
 
 #navlist li a {
-    margin-left: 1rem;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 250;
-    font-size: 17px;
-    color: #072ac8;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 17px;
+  color: #6b708d;
+}
+
+#navlist li a:hover {
+  color: #072ac8;
 }
 
 #heroSection {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    /* grid-template-columns: 50% 50%; */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
-
-
-#heroimgbar {
-    display: flex;
-    justify-content: space-between;    
-}
-
 
 #herosectionimg {
-    position: relative;
-    width: 70vw;
-    background-image: url("../images/hero-image.png");
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
+  position: relative;
+  width: 60vw;
+  background-image: url("../images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
 }
 
 #card1 {
-    position: absolute;
-    top: -20px;
-    left: -70px;
-    width: 300px;
-
+  position: absolute;
+  top: -20px;
+  left: -70px;
+  width: 300px;
 }
 
 #card2 {
-    position: absolute;
-    width: 250px;
-    left: 250px;
-    bottom: -80px;
+  position: absolute;
+  width: 250px;
+  left: 250px;
+  bottom: -80px;
 }
 
-@media (min-width: 1024px) {
-   
-    #headerButton {
-        display: inline-flex;
-    }
+#herosectiontxt {
+  text-align: left;
+}
 
-    #heroSection {
-        flex-direction: row;
-    }
-    /* .allSections {
-      display: block;
-    } */
+#herotxt {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#heroimgbar {
+  display: flex;
+  flex-wrap: wrap;
+  filter: grayscale(1);
+  margin: 0 40px 0 40px;
+  padding: 0 40px;
+}
+
+#heroimgbar img {
+  padding: 40px;
+}
+#projectSections {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#vectorifyimg {
+  height: 444px;
+}
+
+.carousel {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 445px;
+  margin: 35px 0px;
+}
+
+.textcarousel {
+  display: flex;
+  padding-left: 40px;
+  background-color: white;
+}
+
+.headlineregular {
+  font-size: 1.06rem;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+.carousel img {
+  width: 340px;
+}
+
+#simplify,
+#dashcoin,
+#vectorify {
+  box-shadow: 0px 38.775508880615234px 77.55101776123047px 0px #0000001a;
+}
+
+#testimonialSection{
+    display:flex;
+    background-color: #292e47;
+    padding: 20px;
+    margin: 70px 40px;
+}
+
+#emoji1, #emoji2{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  #headerButton {
+    display: inline-flex;
   }
-  
+
+  #heroSection {
+    flex-direction: row;
+  }
+
+  #herosectionimg {
+    min-width: 30vh;
+  }
+
+  #heroimgbar {
+    justify-content: space-between;
+  }
+
+  #projectTitle {
+    align-self: flex-start;
+    padding-left: 120px;
+    margin: 100px 0px;
+  }
+
+  .carouselcontainer {
+    display: flex;
+  }
+
+  .carousel {
+    margin: 0px 45px;
+  }
+  #projectSections {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
