@@ -31,6 +31,16 @@ h4 {
   color: #292e47;
 }
 
+a:visited{
+  color: #6b708d;
+}
+
+a:active,
+a:link, 
+a:visited{
+  text-decoration: none;
+}
+
 .allbuttons {
   border: none;
   margin: 25px 20px;
@@ -84,13 +94,14 @@ h4 {
 #navlist li a:hover {
   color: #072ac8;
 }
+/* ----------------hero section------------------ */
 
 #heroSection {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding-left: 100px;
 }
 
 #herosectionimg {
@@ -137,6 +148,9 @@ h4 {
 #heroimgbar img {
   padding: 40px;
 }
+
+/* -----------------Project Section-------------- */
+
 #projectSections {
   display: flex;
   align-items: center;
@@ -152,6 +166,12 @@ h4 {
   flex-direction: column;
   height: 445px;
   margin: 35px 0px;
+  box-shadow: 0px 38.775508880615234px 77.55101776123047px 0px #0000001a;
+  transition: transform .2s;
+}
+
+.carousel:hover{
+  transform: scale(1.2);
 }
 
 .textcarousel {
@@ -164,37 +184,226 @@ h4 {
   font-size: 1.06rem;
   font-weight: 400;
   line-height: 25.5px;
+  padding-right: 25px;
 }
 
 .carousel img {
   width: 340px;
 }
 
-#simplify,
-#dashcoin,
-#vectorify {
-  box-shadow: 0px 38.775508880615234px 77.55101776123047px 0px #0000001a;
-}
+/* -----------------Testimonial Section----------- */
 
 #testimonialSection{
-    display:flex;
     background-color: #292e47;
     padding: 20px;
-    margin: 70px 40px;
+    margin: 140px 40px;
 }
 
-#emoji1, #emoji2{
-    display: flex;
-    flex-direction: column;
-    width: 150px;
+#textimonial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonialtitle {
+  color: #ffffff;
+  text-align: center;
+}
+
+#testimonialtxt{ 
+  color: #ffc600;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 38.4px;
+  margin-top: 0;
+}
+
+#kristin{
+  display: flex;
+  align-items: center;
+}
+
+#kristincirc {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+#emoji1, 
+#emoji2 {
+  display: none;  
+  }
+
+#kristincirc img {
+  height: 100%;
+  margin-left: -7px;
+  }
+
+#kristintitle {
+  color: #a2d6f9;
+  font-weight: 400;
+  font-size: 1.063rem;
+  line-height: 17px;
+  margin-bottom: 0%;
+  }
+
+#booking {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 15,23px;
+  margin-top: 0%;
+}
+
+/* -----------------Service Section----------- */
+#srvccarous{
+  align-items: center;
+}
+
+.iconcircle{
+  margin: 30px 0 0 30px;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ecf7ff;
+}
+
+#servicesection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#uidesign, 
+#uxdesign,
+#appdev {
+  margin-left: 50px;
+  height: 380px;
+  width: 340px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  
+}
+#uimg,
+#uximg,
+#appdevimg {
+  width: auto;
+  height:40px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+/* -----------------CTA Section----------- */
+
+#ctasection{
+  background-color: #ffc600;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ctatitle{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+#ctatxt{
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+#email{
+  width: 393px;
+  height: 80px;
+  background-color: #f4f6fc;
+  border: none;
+  padding-left: 60px;
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 25.5px;
+  color: #292e47;
+}
+
+.wrapper{
+  position: relative;
+}
+
+#ctabutton{
+  height: 80px;
+  width: 198px;
+}
+#mail{
+  position: absolute;
+  left: 20px;
+  transform: translateY(110%);
+}
+
+/* -----------------Footer----------- */
+
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px;
+  padding: 0 50px;
+}
+#circlefooter{
+  width: 260px;
+  margin-top: 20px;
+}
+
+#circimgfoot{
+  height: 30px;
+  width: auto;
+}
+
+.circlefootxt{
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: #6b708d;
+
+}
+
+#footerlinks{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 112px;
+  width: 435px;
+  list-style: none;
+}
+
+#footerlinks li{
+  padding: 20px;
 }
 
 
 
 
+
+/* ---------------MediaQuery---------------- */
 
 
 @media (min-width: 1024px) {
+  .allSections{
+    margin: 140px 40px;
+  }
+  
   #headerButton {
     display: inline-flex;
   }
@@ -204,14 +413,14 @@ h4 {
   }
 
   #herosectionimg {
-    min-width: 30vh;
+    min-width: 13vh;
   }
 
   #heroimgbar {
     justify-content: space-between;
   }
 
-  #projectTitle {
+  .sectiontitle {
     align-self: flex-start;
     padding-left: 120px;
     margin: 100px 0px;
@@ -228,4 +437,30 @@ h4 {
     flex-direction: column;
     justify-content: space-around;
   }
+  
+  #testimonialSection {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 622px;
+  }
+  #textimonial {
+    justify-content: space-around;
+  }
+
+  #testimonialtitle {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #emoji1, #emoji2 {
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      width: 150px;
+  }  
+
+  #srvccarous{
+    justify-content: space-around;
+  } 
 }

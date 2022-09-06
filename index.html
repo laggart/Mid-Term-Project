@@ -5,9 +5,11 @@
         <title> Mid Term Project Juan Carlos Pineda </title>
         <link rel="stylesheet" href="./css/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     </head>
     <body>
+
+     <!--    // -----------NavBar---------- // -->
+
         <header class="headers" id="headerHero">
             <nav id="homeNavbar">
                 <div id="circleHome">
@@ -21,6 +23,9 @@
                     <button class="allbuttons" id="headerButton">Contact Us</button>
             </nav>
         </header>
+
+    <!--    // -----------Hero Section---------- // -->  
+
         <section class="allSections" id="heroSection">
             <div id="herosectiontxt">
                 <h1 id="titleHero">Empower Your 
@@ -29,7 +34,6 @@
                 <p id="herotxt">Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
                 <button class="allbuttons" id="getinTouchButton">Get in touch</button>
                 <a href="*">See our work</a>
-
             </div>
             <div id="herosectionimg">
                 <img id="card1" src="./images/card-1.png" alt="choose your card">
@@ -45,8 +49,11 @@
                 <img id="amazon" src="./images/amazon-logo.svg" alt="Amazon logo"></img>  
             </div>
         </section>
+
+    <!--// -----------Project Section---------- // -->
+    
         <section class="allSections" id="projectSections">
-                <h3 id="projectTitle">Recent Projects</h3>
+                <h3 id="projectTitle" class="sectiontitle">Recent Projects</h3>
             <div class="carouselcontainer" id="carContProject">
                 <div class="carousel" id="simplify">
                 <img id="simplifyimg" src="./images/1.jpg">
@@ -74,6 +81,9 @@
             </div>     
             </div>    
         </section>
+
+    <!--// -----------Testimonial Section---------- // -->
+
         <section class="allSections" id="testimonialSection">
             <div class="testimoji1" id="emoji1">
                 <img id="blondie" src="./images/memoji-1.png" alt="emoji blonde girl">
@@ -82,24 +92,90 @@
             <div class="testimonials" id="textimonial">
                 <h3 id="testimonialtitle">Hear What Our Clients Have to Say</h3>
                 <p id="testimonialtxt">"Circle helped us through every stage of our startup.<br> We really enjoyed working with you"</p>
-                <div id="Kristin">
-                    <img src="./images/profile.png" alt="Kristin Watson photo">
-                    <p id="kristintitle">Kristin Watson</p>
-                    <p id="booking">Booking.com</p>
+                <div id="kristin">
+                    <div id="kristincirc">
+                        <img src="./images/profile.png" alt="Kristin Watson photo">
+                    </div>
+                    <div id="kristintxt">
+                        <p id="kristintitle">Kristin Watson</p>
+                        <p id="booking">Booking.com</p>
+                    </div>
                 </div>
-
             </div>
-
-
             <div class="testimoji2" id="emoji2">
                 <img id="capguy" src="./images/memoji-2.png" alt="emoji guy with cap">
                 <img id="partygirl" src="./images/memoji-4.png " alt="emoji party girl">
             </div>
-
-
-
-
         </section>
 
+    <!--// -----------Services Section---------- // -->
+
+        <section class="allSections" id="servicesection">
+            <h3 id="serviceTitle" class="sectiontitle">Our Services</h3>
+        <div class="carouselcontainer" id="srvccarous">
+            <div class="carousel" id="uidesign">
+                <div class="iconcircle">
+                    <img id="uimg" src="./images/1.svg">
+                </div>
+            <div class="textcarousel" id="uitxt">
+                <h4 class="titlesBody" id="serviceui">User Interface Design</p>
+                <p class="headlineregular">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                <a class="headlineregular" href="*">Learn more</a> 
+            </div>
+        </div>
+        <div class="carousel" id="uxdesign">
+            <div class="iconcircle">
+                <img id="uximg" src="./images/2.svg">
+            </div>
+            <div class="textcarousel" id="uxtxt">
+                <h4 class="titlesBody" id="serviceux">User Experience Design</p>
+                <p class="headlineregular">Circle always focuses on delivering the best user experience to your customers.</p>
+                <a class="headlineregular" href="*">Learn more</a> 
+            </div>
+        </div>
+        <div class="carousel" id="appdev">
+            <div class="iconcircle">
+                <img id="appdevimg" src="./images/3.svg">
+            </div>
+            <div class="textcarousel" id="appdevtxt">
+                <h4 class="titlesBody" id="serviceappdev">Application Development<p>
+                <p class="headlineregular">We develop high-quality mobile and web applications using the latest technology stack.</p>
+                <a class="headlineregular" href="*">Learn more</a> 
+            </div>
+        </div>     
+        </div>    
+    </section>
+
+<!-- ---------------  CTA Section ------------------- -->
+    
+    <section class="allSections" id="ctasection">
+        <div class="txtctasection" id="sectionctatxt">
+            <h3 id="ctatitle">Do you have any questions?</h3>
+            <p id="ctatxt">Let us help you!</p>
+        </div>
+        
+        <div id="ctamail">
+            <label for="email"></label>
+            <div class="wrapper">
+                <input type="email" id="email" placeholder="Enter your email">
+                <img id="mail" src="./images/mail.svg" alt="mail icon">
+                <button id="ctabutton" class="allbuttons">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="circlefooter">
+            <img id="circimgfoot" src="./images/circle.svg" alt="circle logo">
+            <p class="circlefootxt">2972 Westheimer Rd. Santa Ana, Illinois 85486  </p>
+        </div>
+        <ul id="footerlinks" class="circlefootxt">
+            <li>Team</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Press</li>
+            <li>Projects</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </footer>
     </body>
 </html>
