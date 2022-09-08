@@ -405,8 +405,38 @@ footer{
   padding: 15px;
 }
 
+/* ---------------Projects page---------------- */
 
+#simplifysection{
+  padding: 73px;
+  margin: 0px 40px;
+}
 
+#completed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pageprojectSections{
+  margin-top: 0px;
+
+}
+#bigimg{
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+#simplifytxt {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#orbitimg{
+  height: 444px;
+}
 
 
 /* ---------------MediaQuery---------------- */
@@ -450,11 +480,13 @@ footer{
   .carousel {
     margin: 0px 45px;
   }
-  #projectSections {
+  #projectSections,
+  #pageprojectSections {
     flex-direction: column;
     justify-content: space-around;
   }
   
+
   #testimonialSection {
     flex-direction: row;
     justify-content:space-between;
