@@ -502,9 +502,7 @@ footer{
   color: #6b708d;
   background-color: #6b708d10;
   margin: 20px 0%;
-}
-
-#usermessage{
+  font-family: Roboto;
   font-size: 1.063rem;
   font-weight: 400;
   line-height: 25.5px;

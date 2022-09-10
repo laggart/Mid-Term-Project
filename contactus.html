@@ -13,16 +13,16 @@
                     <img src="./images/circle.svg">
                 </div>
                 <ul id="navlist">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/services">Services</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#index.html#projectSections">Projects</a></li>
+                    <li><a href="index.html#servicesection">Services</a></li>
                 </ul>
                     <button class="allbuttons" id="headerButton">Contact Us</button>
             </nav>
         </header>
         <section id="contactusform" class="allSections">
             <h1 id="contactustitle">Contact Us</h1>
-            <form id="mainform" action="/some-url" method="post">
+            <form id="mainform" action="/some-url" method='POST'>
                 <div id="fullname">
                     <label for="fullname">Full Name*</label>
                     <input type="text" name="username" id="username" placeholder="Enter your full name">
@@ -30,7 +30,7 @@
                 <div id="emailphone">
                     <div id="emaildiv"><label for="email">Email</label>
                     <input type="email" name="email" id="usermail"
-                    placeholder="Enter your email address"> </div>
+                    placeholder="Enter your email address" required> </div>
                     <div id="phonediv"><label for="phone">Phone</label>
                     <input type="tel" name="phone" id="userphone" placeholder="Enter your phone number"> </div>
                     
@@ -59,4 +59,5 @@
                 <li>Privacy Policy</li>
             </ul>
         </footer>
+        <script src="./javascript/index.js"></script>
     </body>
