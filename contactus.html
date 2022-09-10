@@ -20,7 +20,29 @@
                     <button class="allbuttons" id="headerButton">Contact Us</button>
             </nav>
         </header>
-        <section>
+        <section id="contactusform" class="allSections">
+            <h1 id="contactustitle">Contact Us</h1>
+            <form id="mainform" action="/some-url" method="post">
+                <div id="fullname">
+                    <label for="fullname">Full Name*</label>
+                    <input type="text" name="username" id="username" placeholder="Enter your full name">
+                </div>
+                <div id="emailphone">
+                    <div id="emaildiv"><label for="email">Email</label>
+                    <input type="email" name="email" id="usermail"
+                    placeholder="Enter your email address"> </div>
+                    <div id="phonediv"><label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="userphone" placeholder="Enter your phone number"> </div>
+                    
+                </div>
+                <div id="message">
+                    <label for="message">Message</label>
+                    <textarea form="mainform" name="message" id="usermessage" placeholder="Write your message here ..."></textarea>
+                </div>
+                <button type="submit" class="allbuttons" id="contactusButton">Submit</button>
+            </form>
+
+
 
         </section>
         <footer>
