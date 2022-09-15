@@ -53,5 +53,7 @@ form.addEventListener('submit', (event) => {
         });
 
         form.reset()
-        
+
+        alert('succesfuly submited')
+
 })
